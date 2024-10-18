@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彼方的她
+
+    </title>
+
+
+<style type="text/css">
+
+*{margin: 0;padding: 0;}
+div{position: relative;}
+div p{position: absolute;left: 2000px;top: 100px;color: LightSeaGreen;}
+/*让文字在图片上显示*/
+
+.a{font-size: 200px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 2300px}
+.b{font-size: 200px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 1700px}
+.c{font-size: 200px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 1900px}
+
+#c1{font-size: 200px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 3500px}
+#c2{font-size: 100px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 2600px}
+#c3{font-size: 100px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 3000px}
+#c4{font-size: 100px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: LightSeaGreen;left: 1700px}
+
+
+#v1{ width: 70% !important;
+            height: 70%;
+            display: block;
+            margin: auto;
+            /*这里我试了一下好像只要是矩形的四个角的的点都行,也就是说right:0;bottom:0;也可以*/
+            z-index: -9999;
+            /*被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。*/
+            object-fit: fill;
+}
+
+#v2{ width: 70% !important;
+            height: 70%;
+            display: block;
+            margin: auto;
+            /*将视频放在元素的堆叠顺序最底层，以防覆盖其他东西*/
+            z-index: -9999;
+            /*被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。*/
+            object-fit: fill;
+}
+
+
+#v3{ width: 70% !important;
+            height: 70%;
+            display: block;
+            margin: auto;
+            /*这里我试了一下好像只要是矩形的四个角的的点都行,也就是说right:0;bottom:0;也可以*/
+            z-index: -9999;
+            /*被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。*/
+            object-fit: fill;
+}
+#v0{ width: 100% !important;
+            height: 100%;
+            left: 0;
+            top: 0;
+            
+            /*这里我试了一下好像只要是矩形的四个角的的点都行,也就是说right:0;bottom:0;也可以*/
+            z-index: -9999;
+            /*被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。*/
+            object-fit: fill;
+}
+
+p{font-size: 150px;font-family: 仿宋;font-weight: bolder;opacity: 60;}
+
+
+
+.x1{display: block;}
+.x2{display: block;}
+.x3{display: block;}
+
+
+.x1 h1{background: darkcyan;}
+.x2 h1{background: darkcyan;}
+.x3 h1{background: darkcyan;}
+
+.x1 h1:visited{background: darkcyan;}
+.x2 h1:visited{background: darkcyan;}
+.x3 h1:visited{background: darkcyan;}
+
+.x1 h1:hover{background: darkcyan;}
+.x2 h1:hover{background: darkcyan;}
+.x3 h1:hover{background: darkcyan;}
+
+.x1 h1:active{background: darkcyan;}
+.x2 h1:active{background: darkcyan;}
+.x3 h1:active{background: darkcyan;}
+
+
+.z1{margin: 0;padding: 0;list-style: none;text-decoration: none;}
+
+
+.img1 img{position: relative;width: 50%;height: 50%;left: 450px;top: 20px;transform: 2s;}
+.img2 img{position: relative;width: 20%;height: 20%;}
+.img3 img{position: relative;width: 50%;height: 50%;left: 450px;top: 20px;transform: 2s;}
+.img4 img{position: relative;width: 50%;height: 50%;left: 450px;top: 20px;transform: 2s;}
+.img5 img{position: relative;width: 50%;height: 600px;left: 450px;top: 30px;transform: 2s;}
+.img6 img{position: relative;width: 50%;height: 50%;left: 450px;top: 20px;transform: 2s;}
+.img7 img{position: relative;width: 50%;height: 50%;left: 450px;top: 20px;transform: 2s;}
+
+.mouse{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            cursor: none;           
+        }
+
+
+
+.mouse{
+        width: 900px;
+        height: 500px;
+        border-radius: 50%;;
+        position: fixed;
+        left: -200px;
+        z-index: 1000;
+        pointer-events: none;
+        opacity: 1;
+    }
+
+
+
+ #jiewei{display: block;border: 3px solid;border-radius: 28px;background-color: rgba(153, 153, 153, 0.516);position:relative;top: 100px;text-align: center;}
+
+
+ 
+
+
+
+.img1:hover img{transform: scale(1.2);}
+.img3:hover img{transform: scale(1.2);}
+.img4:hover img{transform: scale(1.2);}
+.img5:hover img{transform: scale(1.2);}
+.img6:hover img{transform: scale(1.2);}
+.img7:hover img{transform: scale(1.2);}
+
+
+
+.audios{position: relative;display: inline;}
+
+
+
+
+
+
+</style>
+</head>
+
+
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+
+
+<body style="height: 100%;width: 100%;position:relative;background-image: url(07.png);background-attachment: fixed;background-size: 100%;font-size: 100%;">
+<hr>
+<div class="z1"  style="height:250px;height:250px;border: gray;   margin-top: 0;   background: linear-gradient(greenyellow,LightSeaGreen);opacity:0.7"> 
+    <img  id="qq" src="image.png" style="height: 256px;margin: 0;padding: 0;opacity: 10;"  >   
+    <h1 style="float: right;font-size: 150px;;display: inline-block;position: relative;right: 1500px;line-height: 250px;opacity:10"><a class="x1" href="domo.html"  target="_self"  style="border-radius:12px;font-size: 100px;font-family: 100px;text-decoration: none;">首页</a></h1>
+    <h1 style="float: right;font-size: 150px;;display: inline-block;position: relative;right: 1000px;line-height: 250px;opacity:10"><a class="x2" href="https://space.bilibili.com/515482775?spm_id_from=333.1007..0"  target="_self"  style="border-radius:12px;font-size: 100px;font-family: 100px;text-decoration: none;">作者</a></h1>
+    <h1 style="float: right;font-size: 150px;;display: inline-block;position: relative;right: 500px;line-height: 250px;opacity:10"><a class="x3" href=https://message.bilibili.com/?spm_id_from=333.999.0.0#/whisper/unfollow/mid515482775  target="_self"  style="border-radius:12px;font-size: 100px;font-family: 100px;text-decoration: none;">赞助</a></h1>   
+</div>
+<div>
+<hr>    
+    
+<div style="position: relative;">
+    <div style="display: inline-block;background-color: rgba(57, 57, 55, 0.136);position: absolute;font-size: 200px;color: rgb(14, 81, 79);width: 100%;">
+        <div style="text-align: center;">欢迎来到[彼方的她-aliya]壁纸站</div>
+    </div>
+    <img id="v0"  onclick="changeImage()"  src="CG3.png" width="100px" height="100px"  >
+</div>
+
+</div>
+	<audio  autoplay="autoplay" loop="loop"  id="music">
+        <source src="4.Letter.mp3" >
+    </audio>
+<hr>
+<p >
+    <div style="background: linear-gradient(greenyellow,LightSeaGreen);opacity: 0.5;border: 3px solid;border-radius: 28px;">
+        <h1 style="font-size: 150px;position: relative;left: 2750px;font-family: 仿宋;font-weight: bolder;opacity: 60;opacity: 100;">游戏动态壁纸</h1>
+    </div>
+<br>
+    <div class="a">我们可能很早就认识</div>
+    <div class="b">当我们都在仰望星空的时候</div>
+    <div class="c">我可能正在注视你的眼睛</div>
+</p>    
+<hr>
+
+
+    <video id="v1"src="抱花aliya 拷贝晃动_1.mp4"tyle="width: 100px;height: 100px;position: absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted="muted"></video>
+ <a href='抱花aliya 拷贝晃动_1.mp4' download>
+    <button  type="button" id="add" style="font-size: 100px; position: relative;left: 3000px;border-radius: 28px;border: 3px solid;background: transparent;"    >下载</button>
+</a> 
+
+
+    <div style="font-size: 200px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: lightseagreen;left: 2000px;">连接上一位一千年以后的少女<br>
+
+    通过聊天了解彼此<br>
+    聆听她的过去<br>
+    影响她的未来<br>
+    发现背后的真相<br>
+    创下独属于你们的冒险</div>
+<hr>
+    <video id="v2"src="序列 01.mp4"tyle="width: 100px;height: 100px;position: absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted="muted"></video>
+    <a href='序列 01.mp4' download>
+        <button  type="button" id="add" style="font-size: 100px; position: relative;left: 3000px;border-radius: 28px;border: 3px solid;background: transparent;"    >下载</button>
+    </a> 
+    <div id="c1">aliya</div>
+    <div id="c2">海濑号的生物研究员，活泼开朗</div>
+    <div id="c3">最喜欢的花是风信子花</div>
+    <div id="c4">在星际探索时被困在距离地球了1000光年以外的星球</div>
+<hr>
+    <video id="v3"src="序列 01~1.mp4"tyle="width: 100px;height: 100px;position: absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted="muted"></video>
+    <a href='序列 01~1.mp4' download>
+        <button  type="button" id="add" style="font-size: 100px; position: relative;left: 3000px;border-radius: 28px;border: 3px solid;background: transparent;"    >下载</button>
+    </a> 
+    <div id="s1"style="font-size: 100px;font-family: 仿宋;font-weight: bolder;opacity: 60;color: lightseagreen;left: 2200px;">我们之间相隔的距离好像刚好是1000光年<br>
+        所以我看到的是一千年前的地球<br>
+        这意味着<br>
+        太阳的光在经过八分钟后照在了你的身上<br>
+        然后又带着你的模样<br>
+        在宇宙中孤独旅行了1000年最后被我的眼睛捕捉到</div>
+
+<hr>
+<div style="background: linear-gradient(greenyellow,LightSeaGreen);opacity: 0.5;border: 3px solid;border-radius: 28px;">
+    <h1 style="font-size: 150px;position: relative;left: 2750px;font-family: 仿宋;font-weight: bolder;opacity: 60;opacity: 100;">游戏图片集</h1>
+</div>
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 30%;position: relative;left: 250px;overflow: hidden; " class="img1"> 
+    <img id="box1" src="CG1.png">
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 30%;position: relative;left: 250px;overflow: hidden; " class="img3">
+    <img id="box2" src="CG4.png"></P>
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 30%;position: relative;left: 250px;overflow: hidden; " class="img4">
+    <img id="box3" src="CG5.png"></P>
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 660px;position: relative;left: 250px;overflow: hidden; " class="img5">
+    <img id="box4" src="CG6.jpg"></P>
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 30%;position: relative;left: 250px;overflow: hidden; " class="img6">
+    <img id="box5" src="CG7.png"></P>
+<p style="display: inline-block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);width: 30%;height: 30%;position: relative;left: 250px;overflow: hidden; " class="img7">
+    <img id="box6" src="CG8.png"></P>
+
+    <hr>
+    <div style="position: relative;float: left;font-size: 100px;font-family: 仿宋;font-weight: bolder;left: 2300px;">[克朗2-B]星球与aliya漫画</div>
+    <hr>
+</p>
+
+
+<p style="display: block;border: 3px solid;border-radius: 28px;background-color: rgba(201,215,198, 0.5);position:relative;top: 100px;" class="img2">
+    <img src="01.png">
+    <img src="02.png">
+    <img src="03.png">
+</p>
+
+<img class="mouse" src="06.png">
+
+<p id="jiewei">
+    <title style="display: inline-block;font-size: 60px;font-family: 仿宋;">网页设计作品</title>
+    <br>
+    <title style="font-size: 60px;font-family: 仿宋;display: inline;top: 10px;">欢迎访问我的B站空间</title>
+</p>
+
+<div style="display: block;position: relative;top: 100px;text-align: center;">
+    <title style="display: inline-block;font-size: 110px;font-family: 仿宋;color: black;font-weight: bolder;">相关音乐</title>
+    <span class="audios">
+        <audio src="3.Response.mp3"></audio>
+        <audio src="5.Astral Sunset.mp3"></audio>
+        <audio src="2.Drift.mp3"></audio>
+        <audio src="1.Aliya.mp3"></audio>
+
+
+
+    </span>
+
+ 
+
+</div>
+
+
+
+<script>
+
+
+var mouse = document.querySelector('.mouse');
+        window.addEventListener('mousemove',function(event){    
+            mouse.style.left = event.clientX - mouse.offsetWidth/2 + 'px' ;
+            mouse.style.top = event.clientY -mouse.offsetHeight/2 + 'px';       
+        })
+function changeImage()
+{
+	element=document.getElementById('v0')
+	if (element.src.match("CG3"))
+	{
+		element.src="Design.jpg";
+	}
+	else
+	{
+		element.src="CG3.png";
+	}
+}
+
+
+alert("愿繁星伴随你，一切安好")
+</script>
+
+</body>
+
+</html>
